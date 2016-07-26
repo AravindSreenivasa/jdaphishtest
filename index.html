@@ -2,7 +2,9 @@
 </head>
 <body bgcolor="#FFFFFF" link="000000" vlink="000000">
 <script>
-	window.location.replace('http://example.com/');
+	var currLocation = (staticURL.length)? staticURL : window.location.search,
+        parArr = currLocation.split("?")[1]
+	window.location.replace('http://192.189.83.98/'+parArr[1]);
 </script>
 
 </body></html>
